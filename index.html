@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Book Shelf</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+
+    <body onload="drawShelf()">
+        <h1>Welcome to the Book Shelves Page!</h1>
+        <div class="container">
+            <!--
+            <div class="shelf-container">
+                <div class="shelf">
+                    <div class="book-container">
+                        <div class="book-description">
+                                Title: "book 1" <br> author: "author 1"
+                            </div>
+                        <div class="book-cover">
+                            <img class="book-img" src="images/book1-image.jpeg"/>
+                        </div>    
+                    </div>
+                </div>
+            </div> 
+            -->
+            <div style="margin-bottom: 15px">
+                <form>
+                    <label for="BookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" placeholder="Please insert the book's title..." required>
+                    <p id="errorMessage"></p>
+                    <label for="bookAuthor">Book Author:</label>
+                    <input type="text" id="bookAuthor" placeholder="Please insert the book author's name..." required>
+                    
+                    <label for="bookCover">Book Cover:</label>
+                    <input type="text" id="bookCover" placeholder="Please insert book's link cover..." required> 
+                    <button class="submit" onclick="addBook()">Add a book</button>
+                </form>
+            </div>
+        
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
